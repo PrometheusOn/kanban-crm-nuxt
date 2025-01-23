@@ -7,9 +7,18 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'shadcn-nuxt',
     '@nuxtjs/color-mode',
+    ['@nuxtjs/google-fonts', {
+      families: {
+        Lato: {
+          wght: [300, 400, 700],
+          ital: [300],
+        },        
+      }
+    }],
+    '@nuxt/icon'
   ],
   shadcn: {
-    prefix: '',
+    prefix: 'Ui',
     componentDir: './components/ui'
   }
 })
