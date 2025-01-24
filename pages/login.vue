@@ -41,10 +41,10 @@ function clearForm() {
   }
 }
 
-async function login(form: LoginForm) {
+async function login() {
   loadingStore.changeLoadingStatus()
   try {
-    await authStore.login(form)
+    await authStore.login(form.value)
     clearForm()
     await router.push('/')
   } catch (e) {
@@ -54,18 +54,16 @@ async function login(form: LoginForm) {
   }
 }
 
-async function register(form: LoginForm) {
+async function register() {
   loadingStore.changeLoadingStatus()
 
   try {
-    await authStore.register(form)
-    await authStore.login(form)
+    await authStore.register(form.value)
+    await authStore.login(form.value)
   } catch (e) {
     console.log(e)
   } finally {
     loadingStore.changeLoadingStatus()
   }
 }
-
-
 </script>

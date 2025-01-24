@@ -43,7 +43,10 @@ export const useAuthStore = defineStore('auth', () => {
       )
   }
 
-  //TODO: написать логаут
+  async function logout() {
+    await account.deleteSession('current')
+    clearUser()
+  }
 
   return {
     user,
@@ -51,6 +54,7 @@ export const useAuthStore = defineStore('auth', () => {
     clearUser,
     setUser,
     login,
-    register
+    register,
+    logout,
   }
 })
