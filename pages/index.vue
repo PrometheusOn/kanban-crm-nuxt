@@ -1,5 +1,5 @@
 <template>
-  <div class="p-10">
+  <div class="p-10 min-h-screen w-full">
     <h1 class="font-bold text-2ml mb-10">
       CRM System by @ramazanfaizov
     </h1>
