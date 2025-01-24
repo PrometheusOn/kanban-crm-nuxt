@@ -3,3 +3,9 @@ export interface UserAuthInfo {
   name: string
   status: boolean
 }
+
+export interface LoginForm {
+  email: string
+  password: string
+  name: string
+}

@@ -14,6 +14,15 @@
 </template>
 
 <script setup lang="ts">
+import type { Card, Column } from "@/components/kanban/kanban.types"
+
+useHead({
+  title: 'Home'
+})
+
+const dragCard = ref<Card | null>(null)
+const sourceColumn = ref<Column | null>(null)
+
 
 </script>
 
