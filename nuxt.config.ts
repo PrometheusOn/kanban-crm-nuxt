@@ -17,6 +17,8 @@ export default defineNuxtConfig({
     }],
     '@nuxt/icon',
     '@pinia/nuxt',
+    '@nuxtjs/tailwindcss',
+    "@hebilicious/vue-query-nuxt"
   ],
   shadcn: {
     prefix: 'Ui',

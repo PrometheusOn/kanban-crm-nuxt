@@ -15,6 +15,7 @@
 
 <script setup lang="ts">
 import type { Card, Column } from "@/components/kanban/kanban.types"
+// import { useKanbanQuery } from "@/components/kanban/useKanbanQuery"
 
 useHead({
   title: 'Home'
@@ -22,7 +23,7 @@ useHead({
 
 const dragCard = ref<Card | null>(null)
 const sourceColumn = ref<Column | null>(null)
-
+// useKanbanQuery()
 
 </script>
 
