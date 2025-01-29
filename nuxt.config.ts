@@ -18,7 +18,8 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
-    "@hebilicious/vue-query-nuxt"
+    "@hebilicious/vue-query-nuxt",
+    'dayjs-nuxt'
   ],
   shadcn: {
     prefix: 'Ui',

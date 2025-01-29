@@ -38,7 +38,7 @@ export const MENU_DATA: IMenuItem[] = [
   {
     name: 'Settings',
     icon: 'radix-icons:gear',
-    url: '/setting'
+    url: '/settings'
   },
   {
     name: 'Help-center',

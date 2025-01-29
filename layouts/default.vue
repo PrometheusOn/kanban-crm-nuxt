@@ -2,7 +2,7 @@
   <LayoutLoader v-if="loadingStore.isLoading" />
   <section v-else :class="{'grid grid-cols-[1fr_6fr] min-h-full': authStore.isUserAuth}">
     <LayoutSidebar v-if="authStore.isUserAuth" />
-    <div>
+    <div class="min-h-screen w-full">
       <slot />
     </div>
   </section>
