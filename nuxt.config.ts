@@ -19,7 +19,10 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
     "@hebilicious/vue-query-nuxt",
-    'dayjs-nuxt'
+    'dayjs-nuxt',
+    ['@vee-validate/nuxt', {
+      autoImports: true,
+    }]
   ],
   shadcn: {
     prefix: 'Ui',
@@ -27,5 +30,5 @@ export default defineNuxtConfig({
   },
   pinia: {
     storesDirs: ['./store/**']
-  }
+  },
 })

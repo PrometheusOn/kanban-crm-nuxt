@@ -1,7 +1,7 @@
 import { COLLECTION_DEALS, DB_ID } from "@/app.constans";
 import { useQuery } from "@tanstack/vue-query";
 import { KANBAN_DATA } from "./kanban.data";
-import type { Card } from "./kanban.types";
+import type { Card } from "@/types/kanban.types";
 import type { Deal } from "@/types/deals.types";
 
 export function useKanbanQuery() {

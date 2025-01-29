@@ -14,6 +14,7 @@
             {{ column.name }}
           </div>
           <div>
+            <KanbanCreateDeal :status="column.id" :refetch="refetch" />
             <UiCard
               v-for="(item, index) in column.items"
               class="mb-3"
@@ -37,7 +38,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Card, Column } from "@/components/kanban/kanban.types"
+import type { Card, Column } from "@/types/kanban.types"
 import { useKanbanQuery } from "@/components/kanban/useKanbanQuery"
 import { convertCurrency } from '@/utils/convertCurrency'
 
@@ -51,7 +52,3 @@ const { data, isLoading, refetch } = useKanbanQuery()
 
 
 </script>
-
-<style scoped>
-
-</style>

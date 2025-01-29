@@ -1493,6 +1493,15 @@
     hookable "^5.5.3"
     unhead "1.11.18"
 
+"@vee-validate/nuxt@^4.15.0":
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/@vee-validate/nuxt/-/nuxt-4.15.0.tgz#04957dc6033f1bebd017b4630cb8673277702d26"
+  integrity sha512-AhQHPLxH4tTf35op+ifkBhnnRwv/EzT8Fi9PQlEwKyLGZgepFQO1qTm6IyaA6aoSKcFWHz3R3hyMrMQdXbiOxQ==
+  dependencies:
+    "@nuxt/kit" "^3.13.2"
+    local-pkg "^0.5.0"
+    vee-validate "4.15.0"
+
 "@vercel/nft@^0.27.5":
   version "0.27.10"
   resolved "https://registry.npmjs.org/@vercel/nft/-/nft-0.27.10.tgz"
@@ -1616,6 +1625,13 @@
   resolved "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.6.4.tgz"
   integrity sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==
 
+"@vue/devtools-api@^7.5.2":
+  version "7.7.1"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-7.7.1.tgz#6a44bf03ce27ba0230461171812d9ae98aeb2458"
+  integrity sha512-Cexc8GimowoDkJ6eNelOPdYIzsu2mgNyp0scOQ3tiaYSb9iok6LOESSsJvHaI+ib3joRfqRJNLkHFjhNuWA5dg==
+  dependencies:
+    "@vue/devtools-kit" "^7.7.1"
+
 "@vue/devtools-core@7.6.8":
   version "7.6.8"
   resolved "https://registry.npmjs.org/@vue/devtools-core/-/devtools-core-7.6.8.tgz"
@@ -1641,10 +1657,30 @@
     speakingurl "^14.0.1"
     superjson "^2.2.1"
 
+"@vue/devtools-kit@^7.7.1":
+  version "7.7.1"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-kit/-/devtools-kit-7.7.1.tgz#9b4cdef7111ffd8673c14e9a16a433c65ebb8a8e"
+  integrity sha512-yhZ4NPnK/tmxGtLNQxmll90jIIXdb2jAhPF76anvn5M/UkZCiLJy28bYgPIACKZ7FCosyKoaope89/RsFJll1w==
+  dependencies:
+    "@vue/devtools-shared" "^7.7.1"
+    birpc "^0.2.19"
+    hookable "^5.5.3"
+    mitt "^3.0.1"
+    perfect-debounce "^1.0.0"
+    speakingurl "^14.0.1"
+    superjson "^2.2.1"
+
 "@vue/devtools-shared@^7.6.8":
   version "7.7.0"
   resolved "https://registry.npmjs.org/@vue/devtools-shared/-/devtools-shared-7.7.0.tgz"
   integrity sha512-jtlQY26R5thQxW9YQTpXbI0HoK0Wf9Rd4ekidOkRvSy7ChfK0kIU6vvcBtjj87/EcpeOSK49fZAicaFNJcoTcQ==
+  dependencies:
+    rfdc "^1.4.1"
+
+"@vue/devtools-shared@^7.7.1":
+  version "7.7.1"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-shared/-/devtools-shared-7.7.1.tgz#3a92d7cc268c15fa639797c45b0aff79eae9b8d7"
+  integrity sha512-BtgF7kHq4BHG23Lezc/3W2UhK2ga7a8ohAIAGJMBr4BkxUFzhqntQtCiuL1ijo2ztWnmusymkirgqUrXoQKumA==
   dependencies:
     rfdc "^1.4.1"
 
@@ -3831,7 +3867,7 @@ listhen@^1.5.6, listhen@^1.9.0:
     untun "^0.1.3"
     uqr "^0.1.2"
 
-local-pkg@^0.5.1:
+local-pkg@^0.5.0, local-pkg@^0.5.1:
   version "0.5.1"
   resolved "https://registry.npmjs.org/local-pkg/-/local-pkg-0.5.1.tgz"
   integrity sha512-9rrA30MRRP3gBD3HTGnC6cDFpaE1kVDWxWgqWJUN0RvDNAo+Nz/9GxB+nHOH0ifbVFy0hSA1V6vFDvnx54lTEQ==
@@ -5831,6 +5867,11 @@ type-fest@^4.18.2, type-fest@^4.7.1:
   resolved "https://registry.npmjs.org/type-fest/-/type-fest-4.32.0.tgz"
   integrity sha512-rfgpoi08xagF3JSdtJlCwMq9DGNDE0IMh3Mkpc1wUypg9vPi786AiqeBBKcqvIkq42azsBM85N490fyZjeUftw==
 
+type-fest@^4.8.3:
+  version "4.33.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.33.0.tgz#2da0c135b9afa76cf8b18ecfd4f260ecd414a432"
+  integrity sha512-s6zVrxuyKbbAsSAD5ZPTB77q4YIdRctkTbJ2/Dqlinwz+8ooH2gd+YA7VA6Pa93KML9GockVvoxjZ2vHP+mu8g==
+
 type-is@^1.6.16:
   version "1.6.18"
   resolved "https://registry.npmjs.org/type-is/-/type-is-1.6.18.tgz"
@@ -6067,6 +6108,14 @@ vary@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
+
+vee-validate@4.15.0:
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-4.15.0.tgz#eb77a9c867669d34abbc33ca5e16f2a991eb7ad5"
+  integrity sha512-PGJh1QCFwCBjbHu5aN6vB8macYVWrajbDvgo1Y/8fz9n/RVIkLmZCJDpUgu7+mUmCOPMxeyq7vXUOhbwAqdXcA==
+  dependencies:
+    "@vue/devtools-api" "^7.5.2"
+    type-fest "^4.8.3"
 
 vite-hot-client@^0.2.4:
   version "0.2.4"

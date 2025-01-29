@@ -1,5 +1,5 @@
 import { EnumStatus } from "@/types/deals.types";
-import type { Column } from "./kanban.types";
+import type { Column } from "@/types/kanban.types";
 
 export const KANBAN_DATA: Column[] = [
 	{
