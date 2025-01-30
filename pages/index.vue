@@ -17,7 +17,7 @@
             <KanbanCreateDeal :status="column.id" :refetch="refetch" />
             <UiCard
               v-for="(item, index) in column.items"
-              class="mb-3"
+              class="mb-5"
               draggable="true"
               :key="index"
             >
@@ -27,7 +27,10 @@
                   {{ convertCurrency(item.price) }}
                 </UiCardDescription>
               </UiCardHeader>
-              <UiCardContent class="text-xs">{{ item.companyName }}</UiCardContent>
+              <UiCardContent class="text-xs">
+                <div>Компания</div>
+                {{ item.companyName }}
+              </UiCardContent>
               <UiCardFooter>{{ $dayjs(item.$createdAt).format('DD MMMM YYYY') }}</UiCardFooter>
             </UiCard>            
           </div>
