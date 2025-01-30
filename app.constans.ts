@@ -1,4 +1,4 @@
-export const APP_WRITE_ID = ''
+export const APP_WRITE_ID = '67905ab200218ea2b299'
 export const DB_ID = 'crm-base'
 export const COLLECTION_DEALS = 'deals'
 export const COLLECTION_CUSTOMERS = 'customers'
