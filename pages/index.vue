@@ -1,5 +1,5 @@
 <template>
-  <div class="p-10">
+  <div class="h-full p-10">
     <h1 class="font-bold text-2ml mb-10">
       CRM System by @ramazanfaizov
     </h1>
@@ -9,6 +9,7 @@
         <div
           v-for="(column, index) in data"
           :key="index"
+          class="h-full"
           @dragover="handleDragOver"
           @drop="() => handleColumn(column)"
         >
