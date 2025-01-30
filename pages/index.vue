@@ -25,6 +25,7 @@
               draggable="true"
               :key="index"
               @dragstart="handleDragStart(card, column)"
+              @click="openDealSlide(card)"
             >
               <UiCardHeader>
                 <UiCardTitle>{{ card.name }}</UiCardTitle>
@@ -42,6 +43,7 @@
         </div>
       </div>
     </div>
+    
   </div>
 </template>
 
@@ -57,6 +59,7 @@ useHead({
   title: 'Home'
 })
 
+const { isSlideOpen, openDealSlide, toogleSlideState } = useDealSlideStore()
 const dragCard = ref<Card | null>(null)
 const sourceColumn = ref<Column | null>(null)
 const { data, isLoading, refetch } = useKanbanQuery()
