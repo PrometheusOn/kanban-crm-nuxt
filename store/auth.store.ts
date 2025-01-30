@@ -1,4 +1,4 @@
-import type { LoginForm, UserAuthInfo } from "@/types/auth";
+import type { LoginForm, UserAuthInfo } from "@/types/user-auth.types";
 import { v4 as uuid } from 'uuid'
 
 export const useAuthStore = defineStore('auth', () => {

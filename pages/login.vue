@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import type { LoginForm } from '@/types/auth'
+import type { LoginForm } from '@/types/user-auth.types'
 
 useHead({
   title: 'Login',
