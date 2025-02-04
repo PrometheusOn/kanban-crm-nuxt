@@ -3,7 +3,7 @@ import type { EnumStatus } from '@/types/deals.types'
 export interface Card {
 	id: string
 	name: string
-	price: number
+	price: string
 	$createdAt: string
 	companyName: string
 	status: string

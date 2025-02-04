@@ -19,6 +19,7 @@ export const useDealSlideStore = defineStore('deal-slide-store', () => {
   }
 
   return {
+    currentDeal,
     isSlideOpen,
     openDealSlide,
     closeDealSlide,
