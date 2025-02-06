@@ -45,11 +45,9 @@
         </div>
       </div>
     </div>
-    <Slideover
+    <KanbanSlideover
       :open="isSlideOpen"
-      direction="right"
-      :isDragging="false"
-      @close="dealSlideStore.closeDealSlide"
+      @update:open="dealSlideStore.toogleSlideState"
     />
   </div>
 </template>

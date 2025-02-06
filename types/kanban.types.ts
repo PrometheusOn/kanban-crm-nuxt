@@ -6,7 +6,7 @@ export interface Card {
 	price: string
 	$createdAt: string
 	companyName: string
-	status: string
+	status: EnumStatus
 }
 
 export interface Column {

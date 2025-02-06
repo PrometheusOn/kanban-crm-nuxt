@@ -9,20 +9,19 @@ export const useDealSlideStore = defineStore('deal-slide-store', () => {
     toogleSlideState(true)
   }
 
-  function closeDealSlide() {
-    toogleSlideState(false)
-    currentDeal.value = null
-  }
-
   function toogleSlideState(state?: boolean) {
-    isSlideOpen.value = state ?? !isSlideOpen.value
+    const currentState = state ?? isSlideOpen.value
+    isSlideOpen.value = currentState
+  
+    if (currentState === false) {
+      currentDeal.value = null
+    }
   }
 
   return {
     currentDeal,
     isSlideOpen,
     openDealSlide,
-    closeDealSlide,
     toogleSlideState,
   }
 })
