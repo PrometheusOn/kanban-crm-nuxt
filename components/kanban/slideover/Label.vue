@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-0.5">
+  <div class="flex flex-col gap-0.5 w-full">
     <label v-if="props.labelText" class="opacity-75 block text-xs">
       {{ defineFieldName(props.labelText) }}
     </label>

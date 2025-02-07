@@ -3,17 +3,18 @@
     <UiDrawerContent>
       <UiDrawerHeader class="m-4 rounded-sm bg-slate-900">
         <UiDrawerTitle>О СДЕЛКЕ</UiDrawerTitle>
-        <UiDrawerDescription class="flex min-h-80">
-          <div class="flex flex-col gap-2">
+        <UiDrawerDescription class="flex gap-2 w-full">
+          <div class="flex flex-col gap-2 w-1/2"><!--TODO: Разобраться с шириной-->
             <KanbanSlideoverLabel
-              v-for="(value, key) in currentDeal"
+              v-for="(value, key) in currentDeal" 
+              class="w-full"
               :key="key"
               :labelText="key"
             >
               {{ formatFieldValue(key, value) }}
             </KanbanSlideoverLabel>            
           </div>
-          <KanbanCommets />
+          <KanbanSlideoverComments />
         </UiDrawerDescription>
       </UiDrawerHeader>
       <!-- <UiDrawerFooter></UiDrawerFooter> Блок с комментарием -->
