@@ -26,6 +26,6 @@ export interface Deal extends BaseField {
 	comments: Comment[]
 	customer: Customer
 	name: string
-	price: number
+	price: string
 	status: EnumStatus
 }

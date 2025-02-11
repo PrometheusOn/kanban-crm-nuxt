@@ -13,8 +13,10 @@
           @dragover="handleDragOver"
           @drop="() => handleColumn(column)"
         >
-          <div class="rounded bg-slate-700 py-1 px-5 mb-2 text-center"
-          :style="generateColumnStyle(index, data?.length)">
+          <div
+            class="rounded bg-slate-700 py-1 px-5 mb-2 text-center"
+            :style="generateColumnStyle(index, data?.length)"
+          >
             {{ column.name }}
           </div>
           <div>
@@ -25,6 +27,7 @@
               draggable="true"
               :key="index"
               @dragstart="handleDragStart(card, column)"
+              @click="dealSlideStore.openDealSlide(card)"
             >
               <UiCardHeader>
                 <UiCardTitle>{{ card.name }}</UiCardTitle>
@@ -37,11 +40,15 @@
                 {{ card.companyName }}
               </UiCardContent>
               <UiCardFooter>{{ $dayjs(card.$createdAt).format('DD MMMM YYYY') }}</UiCardFooter>
-            </UiCard>            
+            </UiCard>
           </div>
         </div>
       </div>
     </div>
+    <KanbanSlideover
+      :open="isSlideOpen"
+      @update:open="dealSlideStore.toogleSlideState"
+    />
   </div>
 </template>
 
@@ -57,6 +64,8 @@ useHead({
   title: 'Home'
 })
 
+const dealSlideStore = useDealSlideStore()
+const { isSlideOpen } = storeToRefs(dealSlideStore)
 const dragCard = ref<Card | null>(null)
 const sourceColumn = ref<Column | null>(null)
 const { data, isLoading, refetch } = useKanbanQuery()
