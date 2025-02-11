@@ -1,10 +1,10 @@
 <template>
   <UiDrawer>
     <UiDrawerContent>
-      <UiDrawerHeader class="m-4 rounded-sm bg-slate-900">
+      <UiDrawerHeader class="m-4 rounded-sm bg-slate-900 h-[500px]">
         <UiDrawerTitle>О СДЕЛКЕ</UiDrawerTitle>
-        <UiDrawerDescription class="flex gap-2 w-full">
-          <div class="flex flex-col gap-2 w-1/2"><!--TODO: Разобраться с шириной-->
+        <UiDrawerDescription class="grid grid-cols-[1fr_2fr] gap-2 h-full w-full">
+          <div class="flex flex-col gap-2">
             <KanbanSlideoverLabel
               v-for="(value, key) in currentDeal" 
               class="w-full"
@@ -17,7 +17,6 @@
           <KanbanSlideoverComments />
         </UiDrawerDescription>
       </UiDrawerHeader>
-      <!-- <UiDrawerFooter></UiDrawerFooter> Блок с комментарием -->
     </UiDrawerContent>
   </UiDrawer>
 </template>

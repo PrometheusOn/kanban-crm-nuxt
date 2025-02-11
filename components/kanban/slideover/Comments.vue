@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-col gap-2 w-full">
+  <div class="flex flex-col gap-2 w-full h-full">
     <UiInput
       v-model="comment"
       placeholder="Оставьте комментарий"
       @keyup.enter="writeComment"
     />
     <UiSkeleton v-if="isLoading" class="w-full h-[76px] rounded" />
-    <UiScrollArea v-else-if="deal" class="flex flex-col h-4/5">
+    <UiScrollArea v-else-if="deal" class="flex flex-col w-full h-[400px]">
       <div
         v-for="comment in deal?.comments"
         :key="comment.$id"
