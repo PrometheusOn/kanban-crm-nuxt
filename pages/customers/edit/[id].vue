@@ -1,6 +1,6 @@
 <template>
   <div class="p-10">
-    <h1 class="font-bold text-2xl mb-10">Редактирование {{ data?.name || '' }}</h1>
+    <PageTitle>Редактирование {{ data?.name || '' }}</PageTitle>
     <form @submit="onSubmit" class="flex flex-col gap-2">
       <UiInput 
         placeholder="Наименование"
