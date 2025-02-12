@@ -1,8 +1,8 @@
 <template>
   <div class="h-full p-10">
-    <h1 class="font-bold text-2ml mb-10">
+    <PageTitle>
       CRM System by @ramazanfaizov
-    </h1>
+    </PageTitle>
     <div v-if="isLoading">Loading...</div>
     <div v-else>
       <div class="grid grid-cols-5 gap-16">

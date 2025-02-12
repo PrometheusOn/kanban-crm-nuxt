@@ -1,6 +1,6 @@
 <template>
   <div class="p-10">
-    <h1 class="font-bold text-2xl mb-10">Наши клиенты</h1>
+    <PageTitle>Наши клиенты</PageTitle>
     <div v-if="isLoading">Loading...</div>
     <UiTable v-else>
       <UiTableHeader>
@@ -48,5 +48,5 @@ const { data, isLoading } = useQuery({
   queryFn: () => DB.listDocuments(DB_ID, COLLECTION_CUSTOMERS)
 })
 
-const customers = data?.value?.documents as unknown as Customer[]
+const customers = computed(() => data.value?.documents as unknown as Customer[] ?? [])
 </script>
